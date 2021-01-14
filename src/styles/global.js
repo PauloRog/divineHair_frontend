@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -14,6 +15,8 @@ export default createGlobalStyle`
     outline: 0;
   }
 
+  
+
   html, body, #root {
     height: 100%;
   }
@@ -22,7 +25,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  boyd, input, button {
+  body, input, button {
     font: 14px 'Roboto', sans-serif;
   }
 
