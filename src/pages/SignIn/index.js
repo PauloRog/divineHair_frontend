@@ -28,7 +28,7 @@ function SignIn() {
       <Form schema={schema} onSubmit={handleSubmit}>
         <Input name="email" type="email" placeholder="Your email" />
         <Input name="password" type="password" placeholder="Your password" />
-        <button type="submit">{loading ? 'Loading...' : 'Access'}</button>
+        <button type="submit">{loading ? 'Loading...' : 'Login'}</button>
         <Link to="/register">Create your free account</Link>
       </Form>
     </>

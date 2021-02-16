@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState, useMemo, useEffect } from 'react';
 import {
   format,
@@ -73,6 +74,7 @@ function Dashboard() {
             <strong>{time.time}</strong>
             <span>
               {time.appointment ? time.appointment.user.name : 'Available'}
+              {console.log(time.appointment)}
             </span>
           </Time>
         ))}

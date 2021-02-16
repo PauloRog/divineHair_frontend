@@ -25,7 +25,7 @@ function Header() {
             <img
               src={
                 profile.avatar ||
-                'https://avatars.dicebear.com/api/bottts/pasdasd.svg?w=50&h=50'
+                `https://avatars.dicebear.com/api/bottts/${profile.name}.svg`
               }
               alt="Paulo Rogerio"
             />

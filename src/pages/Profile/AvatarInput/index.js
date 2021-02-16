@@ -1,12 +1,12 @@
+/* eslint-disable react/prop-types */
 import React, { useState, useRef, useEffect } from 'react';
 import { useField } from '@rocketseat/unform';
 import api from '../../../services/api';
 import { Container } from './styles';
 
-function AvatarInput() {
+function AvatarInput({ nameProfile }) {
   const { defaultValue, registerField } = useField('avatar');
   const [file, setFile] = useState(defaultValue && defaultValue.id);
-  // eslint-disable-next-line no-unused-vars
   const [preview, setPreview] = useState(defaultValue && defaultValue.url);
   const ref = useRef();
 
@@ -36,7 +36,10 @@ function AvatarInput() {
     <Container>
       <label htmlFor="avatar">
         <img
-          src={preview || 'https://avatars.dicebear.com/api/bottts/pasdasd.svg'}
+          src={
+            preview ||
+            `https://avatars.dicebear.com/api/bottts/${nameProfile}.svg`
+          }
           alt=""
         />
         <input

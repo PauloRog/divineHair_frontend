@@ -21,7 +21,7 @@ function Profile() {
   return (
     <Container>
       <Form initialData={profile} onSubmit={handleSubmit}>
-        <AvatarInput name="avatar_id" />
+        <AvatarInput name="avatar_id" nameProfile={profile.name} />
         <Input name="name" placeholder="Your name" />
         <Input name="email" type="email" placeholder="Your email" />
         <hr />
